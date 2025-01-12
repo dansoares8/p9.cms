@@ -1,16 +1,13 @@
 <?php 
 class controller{
 
+    private $config;
 
-    /*
-    protected $db;
-
-    //Conexão com o BD (Não precisa ter no controller porque terá no Model)
     public function __construct(){
-        global $config;
-        $this->db = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'].";dbuser=".$config['root'].";dbpass=".$config['root'].";");
+        $cfg = new Config();
+        $this->config = $cfg->getConfig();
+
     }
-    */
 
     public function loadView($viewName, $viewData = array()){
         extract($viewData);
@@ -18,7 +15,7 @@ class controller{
     }
 
     public function loadTemplate($viewName, $viewData = array()) {
-        include 'views/template.php';
+        include 'views/templates/'.$this->config['site_template'].'.php';
     }
 
     public function loadViewInTemplate($viewName, $viewData){
