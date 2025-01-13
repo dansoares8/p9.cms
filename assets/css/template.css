@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: #fff;
+    margin: 0;
+}
+.topo{
+    height: 80px;
+    background-color: #EEE;
+}
+.menu{
+    height: 40px;
+    background-color: #DDD;
+}
+.container{
+    min-height: 200px;
+    background-color: #fff;
+}
+.rodape{
+    height: 80px;
+    background-color: #DDD;
+
+}

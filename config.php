@@ -1,6 +1,8 @@
 <?php 
 require 'environment.php';
 
+define("BASE", "http://localhost/p9.cms/");
+
 global $config;
 $config = array();
 
