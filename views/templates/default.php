@@ -10,18 +10,16 @@
 <body>
 
     <div class="menu">
-
+        <?php $this->loadMenu(); ?>
     </div>
-    
+
     <div class="topo">
         
     </div>
 
 
     <div class="container">
-        <?php 
-        $this->loadViewInTemplate($viewName, $viewData);
-        ?>
+        <?php $this->loadViewInTemplate($viewName, $viewData); ?>
     </div>
 
     <div class="rodape">
