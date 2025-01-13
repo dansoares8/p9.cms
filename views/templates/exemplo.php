@@ -5,7 +5,7 @@
     <title><?php echo $this->config['site_title'];?></title>
     
     <!-- css style -->
-    <link rel="stylesheet" href="<?php echo BASE; ?>assets/css/template.css" />
+    <link rel="stylesheet" href="<?php echo BASE; ?>assets/css/exemplo.css" />
 </head>
 <body>
 
